@@ -1,10 +1,23 @@
 /* External CSS */
 
+/* Css variables */
+:root{
+  --primaryColor: #153243;
+  --secondaryColor:#284B63;
+  --accentColor:#B4B8AB;
+  
+  --sizingSmall:5px;
+  --sizingMedium:8px;
+  --sizingLarge:20px;
+}
+
+
 /* body is a CSS Selector */
 /* {} idicates a CSS Declaration */
 body {
   /* property:value; is a CSS Rule */
-  background-color: #fdfdfd;
+
+  background-color: var(--primaryColor);
   color: #0d0d0d;
 }
 
@@ -14,6 +27,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 8px 0;
+  border-bottom: 5px solid var(--secondaryColor);
 }
 
 .headerLogo {
@@ -40,4 +54,5 @@ main {
 footer {
   display: flex;
   justify-content: center;
+  border-top: 5px solid var(--secondaryColor);
 }
